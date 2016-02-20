@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="robots" content="index, follow">
+		<meta name="theme-color" content="#f4f5f6">
+		<title>Milligram | A minimalist CSS framework.</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+		<link rel="stylesheet" href="css/milligram.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<main class="wrapper">
+			<section class="container">
+				<h1 class="title">Computer Class</h5>
+				<p>Learing computer programming for the Shishvan Computer Class</p>
+			</section>
+
+
+			<section class="container">
+				<h2 class="title">Class 1: Introduction To Python</h2>
+				<h5>Python</h5>
+				<div>
+				<p><pre class='code prettyprint'><code class='code-content'>>>> my_marks / total_marks * 100</code></pre></p>
+				<h5>Variables</h5>
+				<p><pre class='code prettyprint'><code class='code-content'>>>> my_marks / total_marks * 100</code></pre></p>
+				<h5>Functions</h5>
+				<p><pre class='code prettyprint'><code class='code-content'>>>> def what_is_my_percent(my_marks, total_marks):
+      return my_marks / total_marks * 100
+>>> what_is_my_percent(273.0, 300)
+91.0</code></pre></p>
+			</section>
+
+
+			<section class="container">
+				<h2 class="title">Class 2: Loops and Modules</h2>
+				<h5>Loops</h5>
+				<p><pre class='code prettyprint'><code class='code-content'>>>> def add_marks(marks):
+      total_marks = 0
+      for mark in marks:
+        total_marks = total_marks + mark
+      return total_marks
+>>> add_marks([20, 30, 40, 10])
+100</code></pre></p>
+
+				<h5>String Concatenation</h5>
+				<p><pre class='code prettyprint'><code class='code-content'>>>> def say_hello(students):
+      student_names = ''
+      for student in students:
+        student_names = student_names + ' ' + student + ','
+      return 'Hello' + student_names[:-1] + '. How are you?'
+>>> say_hello(['Harry', 'Hermione', 'Ron'])
+Hello Harry, Hermione, Ron. How are you?</code></pre></p>
+
+				<h5>Modules</h5>
+				<p><pre class='code prettyprint'><code class='code-content'>>>> import wizard
+>>> wizard.add_marks([20, 30, 40])</code></pre></p>
+			</section>
+
+
+			<section class="container">
+				<h2 class="title">Class 3: Classes and Conditions</h2>
+
+				<h5>Classes</h5>
+				<p><pre class='code prettyprint'><code class='code-content'>class House:
+    ability = None
+
+class Student:
+    ability = None
+
+gryffindor = House()
+gryffindor.ability = 'bravery'
+
+harry = Student()
+harry.ability = 'bravery'</code></pre></p>
+
+				<h5>Inspection</h5>
+				<p><pre class='code prettyprint'><code class='code-content'>>>> import sortinghat
+>>> dir(sortinghat)
+['House', 'Student', '__builtins__', '__doc__', '__file__', '__name__', '__package__', 'gryffindor', 'harry']</code></pre></p>
+
+
+				<h5>Conditions</h5>
+				<p><pre class='code prettyprint'><code class='code-content'>def sort(student):
+    for house in all_houses:
+        if house.ability == student.ability:
+            if house.students is None:
+                house.students = []
+
+            house.students.append(student)
+            print student.name + ' goes to ' + house.name + '!'</code></pre></p>
+
+
+			</section>
+
+
+			<section class="container">
+				<h2 class="title">Class 4: Practice!</h2>
+				<h5>Calling functions and Loops</h5>
+				<p><pre class='code prettyprint'><code class='code-content'>def sort_everyone():
+		for student in all_students:
+				sort(student)</code></pre></p>
+			</section>
+
+			<section class="container">
+				<h2 class="title">Class 5: HTML</h2>
+				<h5>index.html</h5>
+				<p><pre class='code prettyprint'><code class='code-content'>&lt;html&gt;
+&lt;h1&gt;Shishuvan Computer Club&lt;/h1&gt;
+&lt;p&gt;Welcome to the Shishuvan Computer Club&lt;/p&gt;
+&lt;/html&gt;</code></pre></p>
+
+				<h5>Style</h5>
+				<p><pre class='code prettyprint'><code class='code-content'>&lt;html class='font-family: Joker; background-color: yellow; padding: 30px;'&gt;
+&lt;h1 style='color: red'&gt;Shishuvan Computer Club&lt;/h1&gt;
+&lt;p&gt;Welcome to the Shishuvan Computer Club&lt;/p&gt;
+&lt;/html&gt;</code></pre></p>
+
+				<h5>&lt;div&gt;</code> Block</h5>
+				<p><pre class='code prettyprint'><code class='code-content'>&lt;html class='font-family: Joker; background-color: yellow'&gt;
+&lt;h1 style='color: red'&gt;Shishuvan Computer Club&lt;/h1&gt;
+&lt;p&gt;Welcome to the Shishuvan Computer Club&lt;/p&gt;
+&lt;div style='height: 10px; color: blue;'&gt;&lt;/div&gt;
+&lt;/html&gt;</code></pre></p>
+			</section>
+
+
+				<!--<p><pre class='code prettyprint'><code class='code-content'></code></pre></p>-->
+
+
+
+			<footer class="footer">
+				<section class="container">
+					<p>Designed with ♥ by Rushabh Mehta. Licensed under the Creative Commons BY-CC-NA.</p>
+				</section>
+			</footer>
+
+		</main>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/run_prettify.js"></script>
+		<script src="js/script.js"></script>
+
+	</body>
+</html>
