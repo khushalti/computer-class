@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="robots" content="index, follow">
 		<meta name="theme-color" content="#f4f5f6">
-		<title>Milligram | A minimalist CSS framework.</title>
+		<title>Computer Class.</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
@@ -15,18 +15,33 @@
 		<main class="wrapper">
 			<section class="container">
 				<h1 class="title">Computer Class</h5>
-				<p>Learing computer programming for the Shishvan Computer Class</p>
+				<p>Learing computer programming at the Shishvan Computer Club</p>
 			</section>
 
 
 			<section class="container">
 				<h2 class="title">Class 1: Introduction To Python</h2>
 				<h5>Python</h5>
-				<div>
-				<p><pre class='code prettyprint'><code class='code-content'>>>> my_marks / total_marks * 100</code></pre></p>
+				<p>Install and run "python" to start the interpreter. Try basic math statements.</p>
+				<p><pre class='code prettyprint'><code class='code-content'>>>> 2+2
+4
+>>> 5 * 20
+100
+>>> 10 / 3
+3</code></pre></p>
+
 				<h5>Variables</h5>
+				<p>Values can be given names (Variables) and can be used instead of numbers.</p>
 				<p><pre class='code prettyprint'><code class='code-content'>>>> my_marks / total_marks * 100</code></pre></p>
+
+				<h5>Lists</h5>
+				<p>Values can be maintained in a list and accessed by its "index".</p>
+				<p><pre class='code prettyprint'><code class='code-content'>>>> my_list = [23, 4, 6, 'harry']
+>>> my_list[0]
+23</code></pre></p>
+
 				<h5>Functions</h5>
+				<p>A function is <b>def</b>ined to run a group of statements and return a value.</p>
 				<p><pre class='code prettyprint'><code class='code-content'>>>> def what_is_my_percent(my_marks, total_marks):
       return my_marks / total_marks * 100
 >>> what_is_my_percent(273.0, 300)
@@ -37,6 +52,7 @@
 			<section class="container">
 				<h2 class="title">Class 2: Loops and Modules</h2>
 				<h5>Loops</h5>
+				<p>A loop can run a group of statements many times.</p>
 				<p><pre class='code prettyprint'><code class='code-content'>>>> def add_marks(marks):
       total_marks = 0
       for mark in marks:
@@ -46,6 +62,7 @@
 100</code></pre></p>
 
 				<h5>String Concatenation</h5>
+				<p>Letters (strings) can be joined to make sentences.</p>
 				<p><pre class='code prettyprint'><code class='code-content'>>>> def say_hello(students):
       student_names = ''
       for student in students:
@@ -55,6 +72,7 @@
 Hello Harry, Hermione, Ron. How are you?</code></pre></p>
 
 				<h5>Modules</h5>
+				<p>Functions and variables can be put in files called "modules". The can be imported using the <code>import</code> statement.</p>
 				<p><pre class='code prettyprint'><code class='code-content'>>>> import wizard
 >>> wizard.add_marks([20, 30, 40])</code></pre></p>
 			</section>
@@ -64,6 +82,7 @@ Hello Harry, Hermione, Ron. How are you?</code></pre></p>
 				<h2 class="title">Class 3: Classes and Conditions</h2>
 
 				<h5>Classes</h5>
+				<p>Classes can be used to define concepts with many properties. Concepts can then be made into objects.</p>
 				<p><pre class='code prettyprint'><code class='code-content'>class House:
     ability = None
 
@@ -77,12 +96,14 @@ harry = Student()
 harry.ability = 'bravery'</code></pre></p>
 
 				<h5>Inspection</h5>
+				<p>Modules, objects, classes can be inspected to discover its inner properties.</p>
 				<p><pre class='code prettyprint'><code class='code-content'>>>> import sortinghat
 >>> dir(sortinghat)
 ['House', 'Student', '__builtins__', '__doc__', '__file__', '__name__', '__package__', 'gryffindor', 'harry']</code></pre></p>
 
 
 				<h5>Conditions</h5>
+				<p><code>if</code> statement can run a group of statements based on a condition.</p>
 				<p><pre class='code prettyprint'><code class='code-content'>def sort(student):
     for house in all_houses:
         if house.ability == student.ability:
@@ -99,26 +120,30 @@ harry.ability = 'bravery'</code></pre></p>
 			<section class="container">
 				<h2 class="title">Class 4: Practice!</h2>
 				<h5>Calling functions and Loops</h5>
+				<p>Magic is created by calling functions inside loops (among other things!).</p>
 				<p><pre class='code prettyprint'><code class='code-content'>def sort_everyone():
-		for student in all_students:
-				sort(student)</code></pre></p>
+	for student in all_students:
+		sort(student)</code></pre></p>
 			</section>
 
 			<section class="container">
 				<h2 class="title">Class 5: HTML</h2>
 				<h5>index.html</h5>
+				<p>HTML is a file with text that is decorated with tags like <code>&lt;h1&gt;</code> etc.</p>
 				<p><pre class='code prettyprint'><code class='code-content'>&lt;html&gt;
 &lt;h1&gt;Shishuvan Computer Club&lt;/h1&gt;
 &lt;p&gt;Welcome to the Shishuvan Computer Club&lt;/p&gt;
 &lt;/html&gt;</code></pre></p>
 
 				<h5>Style</h5>
+				<p>Tags can have <code>style</code> attribute that sets its spacing, font, color etc.</p>
 				<p><pre class='code prettyprint'><code class='code-content'>&lt;html class='font-family: Joker; background-color: yellow; padding: 30px;'&gt;
 &lt;h1 style='color: red'&gt;Shishuvan Computer Club&lt;/h1&gt;
 &lt;p&gt;Welcome to the Shishuvan Computer Club&lt;/p&gt;
 &lt;/html&gt;</code></pre></p>
 
-				<h5>&lt;div&gt;</code> Block</h5>
+				<h5><code>&lt;div&gt;</code> Block</h5>
+				<p>Rectangular blocks can be defined using the <code>&lt;div&gt;</code> tag.</p>
 				<p><pre class='code prettyprint'><code class='code-content'>&lt;html class='font-family: Joker; background-color: yellow'&gt;
 &lt;h1 style='color: red'&gt;Shishuvan Computer Club&lt;/h1&gt;
 &lt;p&gt;Welcome to the Shishuvan Computer Club&lt;/p&gt;
@@ -133,7 +158,7 @@ harry.ability = 'bravery'</code></pre></p>
 
 			<footer class="footer">
 				<section class="container">
-					<p>Designed with ♥ by Rushabh Mehta. Licensed under the Creative Commons BY-CC-NA.</p>
+					<p>Made with ♥ by Rushabh Mehta. Licensed under the Creative Commons BY-CC-NA.</p>
 				</section>
 			</footer>
 
